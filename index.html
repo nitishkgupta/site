@@ -183,37 +183,41 @@
 
     <div class="container-fluid px-0">
 
-        <header class="header py-2 px-4 w-100 grad-blue-bg">
-            <div class="row text-center text-md-left">
-                <div class="col-md-4">
-                    <h1><a href="#" class="logo">Nitishk Gupta</a></h1>
-                </div>
-                <div class="col-md-8 header-links text-md-right mt-2">
-                    <a href="#about" class="ml-2">About</a>
-                    <a href="#skills" class="ml-2">Skills</a>
-                    <a href="#projects" class="ml-2">Projects</a>
-                    <a href="#contact" class="ml-2">Contact</a>
-                </div>
-            </div>
-        </header>
+        <div id="vanta-background">
 
-        <section class="main grad-blue-bg pt-4 text-white text-center" name="about" id="about">
-            <center>
-                <div class="w-75">
-                    <img src="about.svg" width="150px" class="wow fadeIn" />
-                    <br>
-                    <br>
-                    <p class="text text-white">I am a software enthusiast who specialises in the field of web development.<br>With my interest in the field, I aim to improve continuously and deliver successful projects.
-                        <br>
-                        <br> Name : Nitishk Gupta
-                        <br> Age : 22 Years
-                        <br> Email : nitishkgupta1@gmail.com
-                    </p>
-                    <br>
-                    <a href="#skills" class="btn grad-blue-bg text-white p-0 text-center rounded-circle wow rubberBand" style="margin-bottom: -26px;width:50px;height: 50px;line-height: 50px;"><span class="ti-arrow-down"></span></a>
+            <header class="header py-2 px-4 w-100">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-4">
+                        <h1><a href="#" class="logo">Nitishk Gupta</a></h1>
+                    </div>
+                    <div class="col-md-8 header-links text-md-right mt-2">
+                        <a href="#about" class="ml-2">About</a>
+                        <a href="#skills" class="ml-2">Skills</a>
+                        <a href="#projects" class="ml-2">Projects</a>
+                        <a href="#contact" class="ml-2">Contact</a>
+                    </div>
                 </div>
-            </center>
-        </section>
+            </header>
+
+            <section class="main pt-4 text-white text-center" name="about" id="about">
+                <center>
+                    <div class="w-75">
+                        <img src="about.svg" width="150px" class="wow fadeIn" />
+                        <br>
+                        <br>
+                        <p class="text text-white">I am a software enthusiast who specialises in the field of web development.<br>With my interest in the field, I aim to improve continuously and deliver successful projects.
+                            <br>
+                            <br> Name : Nitishk Gupta
+                            <br> Age : 22 Years
+                            <br> Email : nitishkgupta1@gmail.com
+                        </p>
+                        <br>
+                        <a href="#skills" class="btn grad-blue-bg text-white p-0 text-center rounded-circle wow rubberBand" style="margin-bottom: -26px;width:50px;height: 50px;line-height: 50px;"><span class="ti-arrow-down"></span></a>
+                    </div>
+                </center>
+            </section>
+
+        </div>
 
         <section class="main pt-4 text-white text-center" name="skill" id="skills" style='background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("illus1.svg");background-size:cover;background-repeat: no-repeat;background-position: center center;'>
             <center>
@@ -432,6 +436,8 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.waves.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
@@ -441,6 +447,21 @@
         new WOW().init();
     </script>
     <!--Ends-->
+
+    <!-- Vanta -->
+    <script type="text/javascript">
+        VANTA.WAVES({
+            el: "#vanta-background",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00
+        });
+    </script>
+    <!-- Ends -->
 
     <!--Smooth Scroll-->
     <script type="text/javascript">
